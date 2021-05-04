@@ -1,0 +1,236 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #000;  
+  color: #fff;   
+}
+header{
+   display: flex;
+   justify-content: space-between;  
+   flex-grow:1; 
+}
+.page-name{
+    font-family: 'Crimson Pro', serif;
+    border:1px solid #fff;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-left: 4em;
+}
+.nav-bar-container{
+    width: 60%;
+    margin-top: 2em;
+    display:flex;    
+    justify-content: space-around;  
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    display:inline-block;
+    text-decoration: none;    
+    padding: 0.5em;
+      
+}
+.nav-link:hover{
+    opacity: 80%;
+    border-bottom:2px solid #fff;
+    font-weight: 700;
+}
+.close{
+    visibility: hidden;
+}
+.menu{    
+    font-size: 50px !important;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 5%;   
+    visibility: hidden;       
+}  
+main{
+    display:flex;
+    margin: 5%;
+}
+.main-left-container{
+    width: 40%;
+    margin-right: 10%;
+    align-self: center;
+}
+.title{
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;     
+}
+
+.description{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 7%;
+}
+.button{
+    display:inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 7%;
+    text-decoration: none;
+    cursor: pointer;
+}
+.main-left-container span{
+    display:inline-block;
+    cursor: pointer;
+    position: relative;
+    left:10px;
+    top: 10px;    
+}
+.main-right-container{
+    width: 50%;
+    height: fit-content;
+    position: relative;   
+}
+img{
+    width: 100%;
+}
+.card{
+    background-color: #000;
+    position:absolute;
+    right:5%;
+    bottom: -22%;
+    color:white;
+    width: 55%;
+    height: 37%;   
+    color:#fff;
+}
+.card-img{
+    width: 15%; 
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.card-name{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;  
+    margin-left: 5%;    
+}
+.card-user{
+    font-size: 14px;
+    font-weight: 500;
+}
+.card-profession{
+    font-size: 12px;
+    font-weight: 500;
+    color:#828282;
+}
+.card-content{
+    padding: 5%;
+    font-family: 'Lora', serif;    
+    font-size: x-large;
+}
+
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;   
+    justify-content: center;
+    align-items: flex-end;
+    height: 5rem;
+    color: grey;  
+    margin-top: 15%;   
+  }
+
+  @media (max-width:600px) {
+      .menu{
+          visibility: visible;
+      }
+      .nav-bar-container {
+          visibility: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;          
+          position: absolute;
+          margin:0;
+          top:0;
+          left:0;
+          height: 100%;
+          width: 100%;
+          background-color: #181719;
+          z-index: 1;
+      }
+      .nav-link{
+          background-color: #181719;
+          margin-top:5%;
+      }
+      .close{
+          
+          cursor:pointer;
+          position: absolute;
+          right: 5%;
+          top: 5%;
+          background-color: #181719;      
+      }
+      .show{
+          visibility: visible;
+      }
+      .menu:hover, .close:hover{
+          opacity: 80%;
+      }
+      .page-name{
+          margin-left: 3%;
+      }
+      main{
+          flex-direction: column;
+      }
+      .main-left-container{
+          width: 95%;
+          margin-bottom: 10%;
+      }
+      .title{
+          font-size: 36px;
+      }
+      .description{
+          font-size: 14px;
+      }
+      .button, .main-left-container span{
+        font-size: 14px;
+        top:5px;
+      }
+      .main-right-container{
+          width: 95%;
+      }
+      .card{
+          width:80%
+      }
+      .card-user{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .card-profession{
+        font-size: 10px;
+        font-weight: 500;
+        color:#828282;
+    }
+    .card-content{
+        padding: 5%;
+        font-family: 'Lora', serif;
+        
+        font-size:18px;
+    }
+
+
+  }
